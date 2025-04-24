@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>homepage</title>
+        
+        <link rel="stylesheet" href="/static/first.css">
+    </head>
+    <body>
+        <nav>
+            <img src="https://marathonhandbook.com/wp-content/uploads/2022/08/Total-Body-Gym-Workout.jpg">
+            
+            
+            <ul>
+            <li class="{%if request.path == 'login'%}active{%endif%}"><a href="login">Login<a></li>
+            <li class="{%if request.path == '/register'%}active{%endif%}"><a href="register">Register<a></li>
+            <li class="{%if request.path == '/packages'%}active{%endif%}"><a href="packages">packages<a></li>
+            <li><a href="personal">personal trainer<a></li>
+            <li><a href="about">about us<a></li>
+            </ul>
+        </nav>
+        <h1>Shreya Gym</h1>
+        <subscript>h2o</subscript>
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculator</title>
+  </head>
+  <body>
+    <form action="/packages" method="post">
+        {% csrf_token %}
+    <div>
+        <label for = "val1">val 1: </label>
+        <input type = "val1" id="val1" name="val1" value="{{val1}}" placeholder= " enter first number"/>
+    </div></br>
+    <div>
+        <select name="opr">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+    </div></br>
+    <div>
+        <label for = "val2">val 2: </label>
+        <input type = "val2" name="val2" id="val2" value="val2" placeholder= " enter second number"/>
+    </div></br>
+    
+ 
+    <button type="submit">=</button> <label>{{ans}}</label>
+       
+  </body>
+</html>

@@ -1,0 +1,25 @@
+nav{
+    background-color: greenyellow;
+}
+nav img{
+    height: 100px;
+    width: 400px;
+}
+ul{
+    float: right;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: medium;
+}
+li a {
+     text-size-adjust: 10px;
+}
+h1{
+     text-align: center;
+     text-size-adjust: 50px;
+}
+home .active a{
+    background-color: black;
+}

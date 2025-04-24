@@ -1,0 +1,21 @@
+<h1>login page</h1>
+<p>post method</p>
+
+<form method = "post" >
+    {% csrf_token %}
+    <div>
+        <label> 
+            name:
+        </label>
+        <input type="text" name="N" placeholder="enter name"/>
+    </div>
+    <div>
+        <label>
+            education:
+        </label>
+        <input type="text" name="E" placeholder="enter education"/>
+    </div>
+    <button type="submit">save1</button>
+    info: 
+    <input type="text" value = "{{output}}"/>
+</form>
